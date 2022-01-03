@@ -1,8 +1,10 @@
 # DappWork
 Recording my progress of blockchain coding!
-pragma solidity 0.5.1;
-// people could use higher level versions of pragma that are a securit vulnerability.
-contract Counter {
+
+ 
+    pragma solidity 0.5.1; 
+ 
+    contract Counter {
     uint public count = 0;
 
     event Increment(uint value);
@@ -22,6 +24,8 @@ contract Counter {
         emit Decrement(count);
     }
 }
+
+
 // solidity is a stack language. You have to tell the data what type of variable is going to be stored in it.
 // uint stands for an unsigned integer i.e 2. uints are always positive. 
 //The numbers at the end of a unit (such as uint256) represents the amount of bits the unint can have. the size.
